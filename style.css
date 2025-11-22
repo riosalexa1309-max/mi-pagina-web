@@ -1,0 +1,20 @@
+/* Estilos movidos desde el archivo HTML */
+:root{ --bg:#f7fbff; --card:#ffffff; --accent:#3b82f6; --muted:#555; }
+body{ font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; background:var(--bg); color:#222; margin:0; padding:20px; }
+.container{ max-width:900px; margin:24px auto; background:var(--card); border-radius:12px; box-shadow:0 8px 24px rgba(12,20,40,0.08); padding:22px; }
+header{ display:flex; gap:18px; align-items:center; }
+.avatar{ width:120px; height:120px; border-radius:999px; object-fit:cover; border:4px solid rgba(59,130,246,0.12); }
+h1{ margin:0; font-size:1.9rem; }
+h2{ margin:18px 0 8px; color:var(--accent); }
+p.lead{ margin:6px 0 12px; color:var(--muted); }
+.meta{ font-size:0.95rem; color:var(--muted); }
+.socials a{ display:inline-block; margin-right:10px; text-decoration:none; color:var(--accent); font-weight:600; }
+.grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; margin-top:18px; }
+.full{ grid-column:1 / -1; }
+ul, ol{ padding-left:1.2rem; }
+table{ width:100%; border-collapse:collapse; margin-top:12px; }
+thead th{ background:linear-gradient(90deg, rgba(59,130,246,0.12), rgba(59,130,246,0.06)); padding:10px; text-align:left; }
+td{ vertical-align:top; padding:10px; border-bottom:1px solid #eee; }
+.card{ background:#fbfdff; padding:12px; border-radius:8px; box-shadow:0 6px 18px rgba(12,20,40,0.03); }
+footer{ text-align:center; margin-top:18px; color:var(--muted); font-size:0.9rem; }
+@media (max-width:720px){ .grid{ grid-template-columns:1fr; } header{ flex-direction:row; } .avatar{ width:90px; height:90px; } }
