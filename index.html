@@ -8,17 +8,15 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <!-- Coloca aquí el archivo de imagen en la misma carpeta con nombre 'avatar.jpg' o cambia la ruta -->
+        <header id class="header-principal">
             <img src="img. lab7 .jpg" alt="Foto de Alexandra Rios" class="avatar" />
             
-            <div>
-                <h1>Alexandra Rios Simancas</h1>
+            <div class="header-info">
+                <h1 id="mi-nombre">Alexandra Rios Simancas</h1>
                 <p class="meta">18 años · Estudiante de Ingeniería Mecatrónica · Técnica en Sistemas · Técnica en Mantenimiento Electromecánico</p>
                 <p class="lead">Actualmente estoy realizando un curso básico de programación. He aprendido conceptos básicos de <strong>HTML</strong>, <strong>JavaScript</strong> y <strong>CSS</strong>.</p>
                 
                 <p class="socials">
-                    <!-- Los enlaces abren en una pestaña nueva. Si no tienes la cuenta exacta, edita las URLs o deja '#' -->
                     <a href="https://instagram.com/alexa_r13S" target="_blank" rel="noopener">Instagram: @alexa_r13S</a>
                     <a href="https://www.facebook.com/Alexandra.Rios" target="_blank" rel="noopener">Facebook: @Alexandra Rios</a>
                     <a href="https://www.tiktok.com/@AlexaRios" target="_blank" rel="noopener">TikTok: @Alexa Rios</a>
@@ -26,21 +24,21 @@
             </div>
         </header>
 
-        <main class="grid">
-            <section class="card">
+        <main class="grid dos-columnas">
+            <section class="card introduccion" id="introduccion">
                 <h2>Introducción</h2>
                 <p>Soy Alexandra Rios Simancas, tengo 18 años y estudio Ingeniería Mecatrónica. También cuento con formación técnica en Sistemas y en Mantenimiento Electromecánico. Me interesa aprender programación y actualmente curso un taller básico donde he trabajado con HTML, CSS y JavaScript. En esta página encontrarás una breve hoja de vida, mis pasatiempos, tareas pendientes y mi horario semanal organizado.</p>
             </section>
 
-            <section class="card">
-                <h2>Hoja de vida (resumen)</h2>
+            <section class="card hoja-vida" id="hoja-vida">
+                <h2>Hoja de vida</h2>
                 <p><strong>Nombre:</strong> Alexandra Rios Simancas</p>
                 <p><strong>Edad:</strong> 18 años</p>
                 <p><strong>Formación:</strong> Técnica en Sistemas; Técnica en Mantenimiento Electromecánico; Estudiante de Ingeniería Mecatrónica</p>
                 <p><strong>Habilidades básicas:</strong> HTML, JavaScript, CSS</p>
             </section>
 
-            <section class="card full">
+            <section class="card full pasatiempos" id="pasatiempos">
                 <h2>Pasatiempos favoritos</h2>
                 <ul>
                 <li>Leer</li>
@@ -49,21 +47,22 @@
                 </ul>
             </section>
 
-            <section class="card full">
-                <h2>Tareas pendientes (ordenadas por prioridad)</h2>
+            <section class="card full tareas" id="tareas">
+                <h2>Tareas pendientes</h2>
                 <ol>
-                    <li>Ingresar a lases de inglés</li>
+                    <li>Ingresar a clases de inglés</li>
                     <li>Ir a ensayar</li>
                     <li>Hacer la cena</li>
-                    <li>Estudiar par un quiz</li>
+                    <li>Estudiar para un quiz</li>
                     <li>Organizar mi cuarto</li>
                 </ol>
             </section>
 
-            <section class="card full">
+            <section class="card full horario" id="horario">
                 <h2>Horario semanal</h2>
-                <p>>Abajo está el horario organizado por dias; cada celda indica las actividades y hors planeadas.</p>
-                <p>Este es mi horario semanal típico, aunque puede variar dependiendo de las actividades y responsabilidades que tenga cada día.</p>
+                <p>Abajo está el horario organizado por dias; cada celda indica las actividades y horas planeadas.</p>
+                
+                <div class="table-wrap">
                 <table border="1" cellspacing="5" cellpadding="10">
                     <thead>
                         <tr>
@@ -80,7 +79,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <ul>
+                                <ul class="lista-horas">
                                     <li>7:00 am </li>
                                     <li>8:00 am </li>
                                     <li>12:30 pm </li>
@@ -92,7 +91,7 @@
                                     <li>10:30 pm </li>
                                 </ul>
                             </td>
-
+                            <!-- Lunes -->
                              <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -107,7 +106,7 @@
                                     <li>Bañarme y dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Martes -->
                             <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -122,7 +121,7 @@
                                     <li>Bañarme y dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Miércoles -->
                             <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -137,7 +136,7 @@
                                     <li>Bañarme y dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Jueves -->
                             <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -152,7 +151,7 @@
                                     <li>Bañarme y dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Viernes -->
                             <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -167,7 +166,7 @@
                                     <li>Bañarme y dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Sábado -->
                             <td>
                                 <ul>
                                     <li>Levantarme, arreglarme y desayunar</li>
@@ -181,20 +180,45 @@
                                     <li>Lista para dormir</li>
                                 </ul>
                             </td>
-
+                            <!-- Domingo -->
                             <td>
                                 <ul>
                                     <li>Levantarme y hacer mis quehaceres</li>
                                     <li>Ir a la iglesia</li>
-                                    <li>Regreso y almuerzo</li>
+                                    <li>Almorzar</li>
                                     <li>Pasar tiempo en familia</li>
                                     <li>Hacer la cena</li>
-                                    <li>Salir a pasear con primos</li>
-                                    <li>Lista para dormir</li>
+                                    <li>Salir a paseas</li>
+                                    <li>Regreso a casa</li>
                                 </ul>
                             </td>
                         </tr>
+                    </tbody>    
                 </table>
+                </div>
             </section>
+
+    <!-- Formulario de contacto --> 
+        <section class="card full contacto" id="contacto"> 
+        <h2>Formulario de Contacto</h2> 
+        <form id="form-contacto" class="formulario" action="#" method="post">
+        <label for="nombre">Nombre completo:</label>
+        <input id="nombre" name="nombre" type="text" placeholder="Escribe tu nombre">
+
+        <label for="motivo">Motivo del contacto:</label>
+        <input id="motivo" name="motivo" type="text" placeholder="¿Por qué deseas contactarme?">
+
+        <label for="email">Correo electrónico:</label>
+        <input id="email" name="email" type="email" placeholder="tucorreo@ejemplo.com">
+
+        <button class="btn-enviar" type="submit">Enviar</button>
+    </form>
+</section>
+
+        </main>
+        <footer class="pie">
+            <p>&copy; 2024 Alexandra Rios Simancas. Todos los derechos reservados.</p>
+        </footer>
+    </div>         
 </body>
 </html>
